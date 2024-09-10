@@ -1,0 +1,28 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Global styles */
+body { @apply bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200; }
+h1 { @apply text-4xl font-bold mb-6; }
+p { @apply text-lg mb-4; }
+a { @apply text-blue-600 dark:text-blue-400 hover:underline; }
+
+/* Layout styles */
+.container { @apply max-w-4xl mx-auto px-4; }
+header { @apply bg-white dark:bg-gray-800 py-4 shadow-sm; }
+footer { @apply bg-white dark:bg-gray-800 py-4 shadow-sm text-center; }
+nav { @apply flex justify-between items-center; }
+nav a { @apply text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white; }
+
+/* Form styles */
+input[type="text"], input[type="email"], textarea { @apply w-full p-2 border rounded text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-700; }
+button { @apply bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600; }
+
+/* Custom component styles */
+.theme-switch { @apply p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200; }
+.language-switch { @apply bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded px-2 py-1 text-gray-800 dark:text-gray-200; }
+.todo-item { @apply flex items-center mb-2; }
+.todo-checkbox { @apply mr-2; }
+.todo-text { @apply text-gray-800 dark:text-gray-200; }
+.todo-completed { @apply line-through; }
